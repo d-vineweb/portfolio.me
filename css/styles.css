@@ -6587,6 +6587,38 @@ fieldset:disabled .btn {
     transform: translateX(-100%);
   }
 }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--bs-gray-700);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 15px;
+  font-size: 20px; /* Increase font size */
+  font-weight: 900;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.soc a {
+  padding: 10px;
+}
+
 @media (max-width: 991.98px) {
   .offcanvas-lg.offcanvas-end {
     top: 0;
@@ -11262,7 +11294,6 @@ hr.divider-light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  
   font-weight: 700;
   color: #212529;
 }

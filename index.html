@@ -121,6 +121,9 @@
         </div>
       </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
     <!-- About-->
     <section class="page-section bg-primary" id="about">
       <div class="container px-4 px-lg-5">
@@ -283,6 +286,8 @@
     <!-- Portfolio-->
     <div id="portfolio">
       <div class="container-fluid p-0">
+        <h2 class="md text-center">Projects</h2>
+        <hr class="divider" />
         <div class="row g-0">
           <div class="col-lg-4 col-sm-6">
             <a
@@ -428,49 +433,53 @@
           class="row gx-4 gx-lg-4 col-xl-6 col-md-8 justify-content-center px-0 col-sm-12 mb-2"
         >
           <div class="container">
-            <h2 class="text-center">Contact</h2>
+            <div class="">
+              <h2 class="text-center">Contact</h2>
 
-            <form
-              class="form-control"
-              action="/submit-form"
-              method="post"
-              netlify
-            >
-              <div class="form-group py-2">
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  required
-                />
-              </div>
+              <form
+                class="form-control"
+                action="/submit-form"
+                method="post"
+                netlify
+              >
+                <div class="form-group py-2">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
 
-              <div class="form-group py-2">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
+                <div class="form-group py-2">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
 
-              <div class="form-group py-2">
-                <label for="message">Message:</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
+                <div class="form-group py-2">
+                  <label for="message">Message:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
 
-              <button type="submit" class="btn btn-primary my-3">Submit</button>
-            </form>
+                <button type="submit" class="btn btn-primary my-3">
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center">
